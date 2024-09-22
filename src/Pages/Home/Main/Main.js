@@ -54,7 +54,7 @@ export default function Main(){
                 
                 <S.SectionTwo>
                     <div>
-                        <FaTruck size={60} color="#01114c"/>
+                        <FaTruck style={{ fontSize: '50px' }} color="#01114c"/>
                         <span>
                             <h5>ENVIO IMEDIATO</h5>
                             <p>Envio imediato, rápido e seguro!</p>
@@ -62,7 +62,7 @@ export default function Main(){
                     </div>
 
                     <div>
-                        <FaMoneyBillAlt size={60} color="#01114c"/>
+                        <FaMoneyBillAlt style={{ fontSize: '60px' }} color="#01114c"/>
                         <span>
                             <h5>MEIOS DE PAGAMENTO</h5>
                             <p>Aceitamos os principais meios de pagamento</p>
@@ -70,7 +70,7 @@ export default function Main(){
                     </div>
 
                     <div>
-                        <MdSecurity size={60} color="#01114c"/>
+                        <MdSecurity style={{ fontSize: '60px' }} color="#01114c"/>
                         <span>
                             <h5>SEGURANÇA</h5>
                             <p>Compra segura e protegida, do pedido à entrega!</p>

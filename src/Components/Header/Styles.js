@@ -41,11 +41,21 @@ export const Header = styled.header`
         }
       }
     }
+    @media(max-width: 768px){
+      display: none;
+    }
   }
+  @media(max-width: 1440px){
+    padding-inline: 100px;
+  }
+  @media(max-width: 1024px){
+    padding-inline: 30px;
+  }
+
 `;
 
 export const Title = styled.section`
-  margin-top: 300px;
+  margin-top: 15vw;
 
     h1 {
         animation: ${fadeIn} 0.5s ease-in-out;
@@ -91,4 +101,11 @@ export const Title = styled.section`
           color: #000c3a;
         }
     }
+  @media(max-width: 1440px){
+    margin-top: 22vw;
+  }
+  @media(max-width: 1024px){
+    margin-top: 30vw;
+  }
+    
 `;

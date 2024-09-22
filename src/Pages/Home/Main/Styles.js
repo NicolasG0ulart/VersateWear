@@ -2,8 +2,7 @@ import styled from "styled-components";
 import Slider from "react-slick";
 
 export const Main = styled.main`
-    border: solid green;
-    height: 400vh;
+    
 `
 export const Destaque = styled.section`
     padding-inline: 150px;
@@ -12,6 +11,12 @@ export const Destaque = styled.section`
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
+    @media(max-width: 1440px){
+        padding-inline: 100px;
+    }
+    @media(max-width: 1024px){
+      padding-inline: 30px;
+    }
 `
 export const SectionTwo = styled.section`
     padding-inline: 150px;
@@ -25,7 +30,7 @@ export const SectionTwo = styled.section`
         display: flex;
         align-items: start;
         gap: 20px;
-        width: 20%;
+        width: 200px;
 
         span{
             h5{ 
@@ -38,7 +43,24 @@ export const SectionTwo = styled.section`
             }
             
         }
+        @media(max-width: 768px){
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
     }
+    @media(max-width: 1440px){
+    padding-inline: 100px;
+  }
+  @media(max-width: 1024px){
+    padding-inline: 30px;
+  }
+@media(max-width: 768px){
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
 `
 export const Clientes = styled.section`
     overflow: hidden;
