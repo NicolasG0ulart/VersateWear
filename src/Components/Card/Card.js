@@ -11,14 +11,13 @@ const CardDiv = styled.div`
     justify-content: space-between;
     gap: 10px;
     transition: .4s;
+    @media(max-width: 768px){
+      width: 300px;
+    }
 
     img{
         border-radius: 5px;
-        transition: .4s;
-        width: 75%;
-        &:hover {
-            transform: scale(1.05);
-        }
+        height: 400px;
     }
     h3{
         font-size: 1.7rem;
