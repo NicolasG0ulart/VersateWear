@@ -5,6 +5,7 @@ const CardDiv = styled.div`
     border-top: 1px solid lightgrey;
     border-right: 0.5px solid lightgrey;
     border-left: 0.5px solid lightgrey;
+    background-color: ghostwhite;
     padding: 15px;
     overflow: hidden;
     width: 30%;
@@ -48,6 +49,12 @@ const CardDiv = styled.div`
     }
     &:hover {
          background-color: ghostwhite;
+    }
+    @media(max-width: 900px){
+      width: 400px;
+    }
+    @media(max-width: 500px){
+      width: 290px;
     }
 `
 
