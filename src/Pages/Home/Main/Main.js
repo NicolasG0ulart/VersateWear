@@ -3,9 +3,8 @@ import * as S from "./Styles"
 
 
 import Camisas from "../../../catalog.json"
-
-
 import Card from "../../../Components/Card/Card";
+import Footer from "../../../Components/Footer/Footer"
 
 export default function Main() {
 
@@ -39,6 +38,7 @@ export default function Main() {
                     ))}
                 </S.Destaque>
             </S.Main>
+            <Footer/>
         </>
     )
 }

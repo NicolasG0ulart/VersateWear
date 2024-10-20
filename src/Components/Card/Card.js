@@ -23,14 +23,24 @@ const CardDiv = styled.div`
         border-radius: 5px;
         height: 330px;
         width: 300px;
+        @media(max-width: 500px){
+            width: 250px;
+            height: 300px;
+        }
     }
     h3{
         font-size: 1.7rem;
         color: #020c32;
+        @media(max-width: 500px){
+            font-size: 1.5rem;
+        }
     }
     h4{
         font-size: 1.5rem;
         color: #020c32;
+        @media(max-width: 500px){
+            font-size: 1.3rem;
+        }
     }
    button{
         color: #f24200;
@@ -45,6 +55,10 @@ const CardDiv = styled.div`
             color: #fa4400;
             cursor: pointer;
             background-color: #000c3a;
+        }
+        @media(max-width: 500px){
+            font-size: 1.3rem;
+            width: 250px;
         }
     }
     &:hover {

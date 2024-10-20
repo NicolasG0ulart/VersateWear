@@ -167,6 +167,195 @@
             "linkUrl": "https://useversate.com.br/wp-content/uploads/2022/04/WhatsApp-Image-2022-10-22-at-19.59.29-1.jpeg",
             "nomeCamisa": "Camisa Santa Cruz",
             "valor": "R$ 50,00"
+        },
+        {
+            "id": 25,
+            "marca": "Adidas",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-04-at-22.45.22-1.jpeg",
+            "nomeCamisa": "Camisa Adidas",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 26,
+            "marca": "Adidas",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-31-at-21.13.56.jpeg",
+            "nomeCamisa": "Camisa Adidas",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 27,
+            "marca": "Anti Social",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2022/09/WhatsApp-Image-2022-10-08-at-17.51.58-1.jpeg",
+            "nomeCamisa": "Camisa Anti Social",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 28,
+            "marca": "High",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2022/04/WhatsApp-Image-2023-01-14-at-21.16.11-1-300x300.jpeg",
+            "nomeCamisa": "Camisa High",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 29,
+            "marca": "High",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2022/09/WhatsApp-Image-2022-11-15-at-13.24.27-300x300.jpeg",
+            "nomeCamisa": "Camisa High",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 30,
+            "marca": "High",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2022/09/WhatsApp-Image-2022-11-15-at-13.24.26-2-300x300.jpeg",
+            "nomeCamisa": "Camisa High",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 31,
+            "marca": "High",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-20-at-22.53.05-300x300.jpeg",
+            "nomeCamisa": "Camisa High",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 32,
+            "marca": "High",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-03-at-22.01.09-300x300.jpeg",
+            "nomeCamisa": "Camisa High",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 33,
+            "marca": "High",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-26-at-14.26.00-2-300x300.jpeg",
+            "nomeCamisa": "Camisa High",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 34,
+            "marca": "Nike",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2022/04/PHOTO-2022-02-09-22-26-18-4-300x300.jpg",
+            "nomeCamisa": "Camisa Nike",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 35,
+            "marca": "Nike",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-17-at-20.47.17-1-e1650241196643-300x300.jpeg",
+            "nomeCamisa": "Camisa Nike",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 36,
+            "marca": "Off White",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2023/02/WhatsApp-Image-2023-02-28-at-22.44.43-300x300.jpeg",
+            "nomeCamisa": "Camisa Off White",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 37,
+            "marca": "Santa Cruz",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2022/08/WhatsApp-Image-2022-12-01-at-22.10.46-300x300.jpeg",
+            "nomeCamisa": "Camisa Santa Cruz",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 38,
+            "marca": "Santa Cruz",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2022/07/WhatsApp-Image-2023-02-01-at-20.32.45-1-300x300.jpeg",
+            "nomeCamisa": "Camisa Santa Cruz",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 39,
+            "marca": "Santa Cruz",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2023/07/Snapinsta.app_391115440_344230081332239_6347412065512013640_n_1080-600x750.jpg",
+            "nomeCamisa": "Camisa Santa Cruz",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 40,
+            "marca": "Thug Nine",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-26-at-21.55.36-300x300.jpeg",
+            "nomeCamisa": "Camisa Thug Nine",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 41,
+            "marca": "Thug Nine",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2023/08/WhatsApp-Image-2023-09-30-at-14.01.55-300x300.jpeg",
+            "nomeCamisa": "Camisa Thug Nine",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 42,
+            "marca": "Thug Nine",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2023/08/WhatsApp-Image-2023-09-30-at-14.02.08-300x300.jpeg",
+            "nomeCamisa": "Camisa Thug Nine",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 43,
+            "marca": "Anti Social",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2022/04/WhatsApp-Image-2022-08-27-at-13.46.56.jpeg",
+            "nomeCamisa": "Camisa Anti Social",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 44,
+            "marca": "Anti Social",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2023/09/WhatsApp-Image-2023-12-13-at-20.51.56-3-300x300.jpeg",
+            "nomeCamisa": "Camisa Anti Social",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 44,
+            "marca": "Anti Social",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2024/06/15277063490_15264635191_15264632592_15263129399_WhatsApp-Image-2024-04-11-at-21.11.45-1-300x300.jpeg",
+            "nomeCamisa": "Camisa Anti Social",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 45,
+            "marca": "High",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-10-at-17.40.38-300x300.jpeg",
+            "nomeCamisa": "Camisa High",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 46,
+            "marca": "High",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2024/07/HIGH_-M-G-GG-3-300x300.jpg",
+            "nomeCamisa": "Camisa High",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 47,
+            "marca": "High",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2024/07/HIGH_-M-G-GG-7-300x300.jpg",
+            "nomeCamisa": "Camisa High",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 48,
+            "marca": "Nike",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2024/06/NIKE_-M-G-GG-1.jpg",
+            "nomeCamisa": "Camisa Nike",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 49,
+            "marca": "Nike",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2024/06/15277063107_WhatsApp-Image-2024-03-15-at-19.27.17-1-300x300.jpeg",
+            "nomeCamisa": "Camisa Nike",
+            "valor": "R$ 50,00"
+        },
+        {
+            "id": 50,
+            "marca": "Nike",
+            "linkUrl": "https://useversate.com.br/wp-content/uploads/2024/06/15277063311_WhatsApp-Image-2024-04-11-at-21.11.46-1-300x300.jpeg",
+            "nomeCamisa": "Camisa Nike",
+            "valor": "R$ 50,00"
         }
     ]
 } 

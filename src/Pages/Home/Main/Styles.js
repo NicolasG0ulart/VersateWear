@@ -23,6 +23,9 @@ export const Destaque = styled.section`
     @media(max-width: 1440px){
         gap: 30px;
     }
+    @media(max-width: 1250px){
+        margin-top: 30px;
+    }    
 `
 export const PesquisaMarca = styled.input`
     margin-top: 100px;
