@@ -2,9 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const CardDiv = styled.div`
+    border-top: 1px solid lightgrey;
+    border-right: 0.5px solid lightgrey;
+    border-left: 0.5px solid lightgrey;
+    padding: 15px;
     overflow: hidden;
-    width: 330px;
-    height: 480px;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +20,8 @@ const CardDiv = styled.div`
 
     img{
         border-radius: 5px;
-        height: 400px;
+        height: 330px;
+        width: 300px;
     }
     h3{
         font-size: 1.7rem;
@@ -30,7 +34,7 @@ const CardDiv = styled.div`
    button{
         color: #f24200;
         height: 60px;
-        width: 100%;
+        width: 300px;
         border-style: none;
         border-radius: 3px;
         background-color: #01114c;
@@ -49,13 +53,21 @@ const CardDiv = styled.div`
 
 export default function Card(props){
 
+    function enviarWhatsApp(produto, codigo, preco, linkProduto) {
+        const numeroVendedor = '5532984770122';
+        const mensagem = `Olá, gostaria de saber mais sobre a disponibilidade da ${props.marca} por R$ ${props.valor}. Veja o produto no link: ${props.img}`;
+        const mensagemCodificada = encodeURIComponent(mensagem);
+        const url = `https://wa.me/${numeroVendedor}?text=${mensagemCodificada}`;
+        window.open(url, '_blank');
+      }
+
     return(
         <>
             <CardDiv>
                 <img src={props.img} alt="Imagem de um dos produtos"/>
                 <h3>{props.marca}</h3>
                 <h4>{props.valor}</h4>
-                <button>Conferir Disponibilidade</button>
+                <button onClick={enviarWhatsApp}>Conferir Disponibilidade</button>
             </CardDiv>
         </>
     )

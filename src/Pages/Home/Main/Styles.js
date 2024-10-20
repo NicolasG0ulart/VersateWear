@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
+    padding-inline: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
 `
 export const Destaque = styled.section`
-    padding-inline: 150px;
+    background-color: ghostwhite;
+    border-radius: 10px;
     margin-top: 100px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
-    gap: 50px;
+
     flex-wrap: wrap;
     @media(max-width: 1440px){
         padding-inline: 100px;
