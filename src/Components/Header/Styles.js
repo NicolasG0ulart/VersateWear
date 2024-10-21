@@ -46,6 +46,11 @@ export const Title = styled.section`
     }
   }
 
+  a {
+      color: #fff;
+      text-decoration:none;
+    }
+
   button {
     padding-right: 40px;
     position: relative;

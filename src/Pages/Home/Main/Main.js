@@ -31,6 +31,7 @@ export default function Main() {
                     placeholder="Pesquise a marca"
                     value={searchText}
                     onChange={handleSearch}
+                    id= "pesquisa"
                 />
                 <S.Destaque>
                     {filteredInfos.map((item) => (

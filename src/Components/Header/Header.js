@@ -28,7 +28,7 @@ export default function Header() {
             Produtos de ótima qualidade e com ótimos preços.<br/>
             Design moderno e de qualidade que valorizam o visual.
           </p>
-          <button>Conferir <span><FaArrowRight/></span></button>
+          <a href="#pesquisa"><button>Conferir <span><FaArrowRight/></span></button></a>
         </S.Title>
       </S.Header>
     </>
