@@ -13,13 +13,12 @@ export const Main = styled.main`
     }
 `
 export const Destaque = styled.section`
-    width: 65%;
+    width: 80%;
     border-radius: 10px;
     margin-top: 100px;
     padding-top: 50px;
     display: flex;
     justify-content: center;
-
     flex-wrap: wrap;
     @media(max-width: 1440px){
         gap: 30px;
@@ -50,7 +49,19 @@ export const PesquisaMarca = styled.input`
 `
 export const Filtros = styled.div`
     border: solid blue;
-    width: 35%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+
+    div{
+        display: flex;
+        gap: 15px;
+
+        label{
+            font-size: 1.2rem;
+            color: #020c32;
+        }
+    }
 `
 export const Content = styled.section`
     display: flex;

@@ -22,8 +22,10 @@ export default function Main() {
 
         setFilteredInfos(filtered);
     };
+    const uniqueBrands = [...new Set(filteredInfos.map(item => item.marca))];
 
-    return (
+
+    return (   
         <>
             <S.Main>
                 <S.PesquisaMarca
@@ -35,7 +37,12 @@ export default function Main() {
                 />
                 <S.Content>
                     <S.Filtros>
-                        <input type="radio"/>
+                        {uniqueBrands.map((brand) => (
+                            <div>
+                            <input type="checkbox"/>
+                            <label>{brand}</label>
+                            </div>
+                        ))}
                     </S.Filtros>
                     <S.Destaque>
                         {filteredInfos.map((item) => (

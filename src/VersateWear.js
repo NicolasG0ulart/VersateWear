@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
 }
 body{
   background-image: url(${BGImg});
-  h1, h2, h3, h4, h5, p, button, li{
+  h1, h2, h3, h4, h5, p, button, li, label{
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
