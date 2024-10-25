@@ -13,6 +13,7 @@ export const Main = styled.main`
     }
 `
 export const Destaque = styled.section`
+    width: 65%;
     border-radius: 10px;
     margin-top: 100px;
     padding-top: 50px;
@@ -46,4 +47,12 @@ export const PesquisaMarca = styled.input`
     @media(max-width: 768px){
       width: 300px;
     }
+`
+export const Filtros = styled.div`
+    border: solid blue;
+    width: 35%;
+`
+export const Content = styled.section`
+    display: flex;
+    border: solid red;
 `

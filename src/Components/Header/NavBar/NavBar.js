@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Logo from "../../../assets/logo.png"
 
-import { FaWhatsapp } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
 
 export default function NavBar() {
 
@@ -51,7 +52,7 @@ const NavBar = styled.nav`
         }
   }
 `
-const SFaWhatsapp = styled(FaWhatsapp)`
+const SFaInstagram = styled(FaInstagram)`
   color: #fff;
   &:hover{
     cursor: pointer;
@@ -66,7 +67,7 @@ const SFaWhatsapp = styled(FaWhatsapp)`
     <>
         <NavBar>
           <img src={Logo} alt="logo do site"/>
-          <SFaWhatsapp size={35} />
+          <a href="https://instagram.com/versatewear" target="_BLANK" rel="noreferrer"><SFaInstagram size={35} /></a>
         </NavBar>
     </>
   );

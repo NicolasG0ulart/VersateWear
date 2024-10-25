@@ -33,11 +33,16 @@ export default function Main() {
                     onChange={handleSearch}
                     id= "pesquisa"
                 />
-                <S.Destaque>
-                    {filteredInfos.map((item) => (
-                        <Card marca={item.nomeCamisa} valor={item.valor} img={item.linkUrl} />
-                    ))}
-                </S.Destaque>
+                <S.Content>
+                    <S.Filtros>
+                        <input type="radio"/>
+                    </S.Filtros>
+                    <S.Destaque>
+                        {filteredInfos.map((item) => (
+                            <Card marca={item.nomeCamisa} valor={item.valor} img={item.linkUrl} />
+                        ))}
+                    </S.Destaque>
+                </S.Content>
             </S.Main>
             <Footer/>
         </>
