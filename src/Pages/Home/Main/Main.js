@@ -1,57 +1,85 @@
 import React, { useState } from "react";
-import * as S from "./Styles"
+import * as S from "./Styles";
 
-
-import Camisas from "../../../catalog.json"
+import Camisas from "../../../catalog.json";
 import Card from "../../../Components/Card/Card";
-import Footer from "../../../Components/Footer/Footer"
+import Footer from "../../../Components/Footer/Footer";
 
 export default function Main() {
+    const infosCamisas = Camisas.camisa;
+    const [filteredInfos, setFilteredInfos] = useState(infosCamisas);
+    const [searchText] = useState("");
+    const [selectedBrands, setSelectedBrands] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
+    const [marcas, setMarcas] = useState(false)
 
-    const infosCamisas = Camisas.camisa
-    const [filteredInfos, setFilteredInfos] = useState(infosCamisas)
-    const [searchText, setSearchText] = useState("");
+    const handleBrandChange = (event) => {
+        const { value, checked } = event.target;
+        let updatedSelectedBrands;
 
-    const handleSearch = (event) => {
-        const text = event.target.value.toLowerCase();
-        setSearchText(text);
+        if (checked) {
+            updatedSelectedBrands = [...selectedBrands, value];
+        } else {
+            updatedSelectedBrands = selectedBrands.filter((brand) => brand !== value);
+        }
 
-        const filtered = infosCamisas.filter((item) =>
-            item.nomeCamisa.toLowerCase().includes(text)
-        );
+        setSelectedBrands(updatedSelectedBrands);
+        setIsLoading(true);
 
-        setFilteredInfos(filtered);
+        setTimeout(() => {
+            const filtered = infosCamisas.filter((item) =>
+                item.nomeCamisa.toLowerCase().includes(searchText)
+            );
+
+            const brandFiltered = updatedSelectedBrands.length > 0
+                ? filtered.filter(item => updatedSelectedBrands.includes(item.marca))
+                : filtered;
+
+            setFilteredInfos(brandFiltered);
+            setIsLoading(false);
+        }, 700);
     };
-    const uniqueBrands = [...new Set(filteredInfos.map(item => item.marca))];
 
+    const uniqueBrands = [...new Set(infosCamisas.map(item => item.marca))];
 
-    return (   
+    return (
         <>
             <S.Main>
-                <S.PesquisaMarca
-                    type="text"
-                    placeholder="Pesquise a marca"
-                    value={searchText}
-                    onChange={handleSearch}
-                    id= "pesquisa"
-                />
                 <S.Content>
-                    <S.Filtros>
+
+                    <S.SelectMarca onClick={()=> setMarcas(!marcas)}>aaaaaaaaa</S.SelectMarca>
+                    <S.Filtros display={marcas}>
+                        
                         {uniqueBrands.map((brand) => (
-                            <div>
-                            <input type="checkbox"/>
-                            <label>{brand}</label>
+                            <div key={brand}>
+                                <input
+                                    onClick={()=> setMarcas(false)}
+                                    type="checkbox"
+                                    id={brand}
+                                    value={brand}
+                                    onChange={handleBrandChange}
+                                />
+                                <label  for={brand}>{brand}</label>
                             </div>
                         ))}
                     </S.Filtros>
                     <S.Destaque>
-                        {filteredInfos.map((item) => (
-                            <Card marca={item.nomeCamisa} valor={item.valor} img={item.linkUrl} />
-                        ))}
+                        {isLoading ? (
+                            <S.LoadingSpinner />
+                        ) : (
+                            filteredInfos.map((item) => (
+                                <Card
+                                    key={item.id}
+                                    marca={item.nomeCamisa}
+                                    valor={item.valor}
+                                    img={item.linkUrl}
+                                />
+                            ))
+                        )}
                     </S.Destaque>
                 </S.Content>
             </S.Main>
-            <Footer/>
+            <Footer />
         </>
-    )
+    );
 }

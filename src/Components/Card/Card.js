@@ -17,8 +17,8 @@ const CardDiv = styled.div`
 
     img{
         border-radius: 5px;
-        height: 225px;
-        width: 200px;
+        height: 255px;
+        width: 240px;
     }
     h3{
         font-size: 1.7rem;
@@ -37,7 +37,7 @@ const CardDiv = styled.div`
    button{
         color: #f24200;
         height: 45px;
-        width: 200px;
+        width: 240px;
         border-style: none;
         border-radius: 3px;
         background-color: #01114c;
