@@ -14,7 +14,8 @@ export const Main = styled.main`
 `
 export const Content = styled.section`
     display: flex;
-    margin-top: 200px;
+    gap: 30px;
+    margin-top: 50px;
     width: 100%;
     align-items: flex-start;
     @media(max-width: 900px) {
@@ -33,6 +34,11 @@ export const SelectMarca = styled.button`
 `
 
 export const Filtros = styled.div`
+    border-left: solid #fc4b08;
+    border-top: solid #fc4b08;
+    box-shadow: 11px 5px 33px -19px rgba(0,0,0,0.84);
+    padding-left: 15px;
+    border-radius: 3px;
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -46,7 +52,6 @@ export const Filtros = styled.div`
         width: 65%;
 
     }
-
 
     div {
         display: flex;
@@ -76,9 +81,9 @@ export const Filtros = styled.div`
 `;
 
 export const Destaque = styled.section`
+    border: solid #fc4b08;
     width: 80%;
     border-radius: 10px;
-    padding-top: 50px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

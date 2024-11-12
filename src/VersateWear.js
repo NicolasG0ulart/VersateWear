@@ -3,7 +3,7 @@ import Home from "./Pages/Home/Home"
 import Cart from "./Pages/Cart/Cart"
 import { createGlobalStyle } from "styled-components";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import BGImg from "../src/assets/background.png"
+
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -13,7 +13,6 @@ const GlobalStyle = createGlobalStyle`
   scroll-behavior: smooth;
 }
 body{
-  background-image: url(${BGImg});
   h1, h2, h3, h4, h5, p, button, li, label{
     font-family: "Lilita One", sans-serif;
     font-weight: 400;

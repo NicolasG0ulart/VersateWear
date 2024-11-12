@@ -4,7 +4,7 @@ import styled from "styled-components";
 const CardDiv = styled.div`
     padding: 15px;
     overflow: hidden;
-    width: 30%;
+    width: 33.333%;
     display: flex;
     flex-direction: column;
     align-items: center;
