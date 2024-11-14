@@ -21,14 +21,15 @@ export const Content = styled.section`
     @media(max-width: 900px) {
         justify-content: space-between;
     }
-    @media(max-width: 620px) {
+    @media(max-width: 985px) {
         justify-content: center;
     }
 `;
 export const SelectMarca = styled.button`
     position: absolute;
     display: none;
-    @media(max-width: 620px){
+    @media(max-width: 985px){
+        margin-top: -32px;
         display: flex;
     }
 `
@@ -36,18 +37,16 @@ export const SelectMarca = styled.button`
 export const Filtros = styled.div`
     border-left: solid #fc4b08;
     border-top: solid #fc4b08;
-    box-shadow: 11px 5px 33px -19px rgba(0,0,0,0.84);
-    padding-left: 15px;
+    padding: 10px 15px 10px 15px;
     border-radius: 3px;
     width: 20%;
     display: flex;
     flex-direction: column;
     @media (max-width: 1024px) {
-        padding-inline: 30px;
+        margin-left: 30px;
     }
-    @media(max-width: 620px) {
+    @media(max-width: 985px) {
         display: ${props => props.display ? 'flex' : 'none'};
-        margin-top: 30px;
         position: absolute;
         width: 65%;
 
@@ -56,18 +55,19 @@ export const Filtros = styled.div`
     div {
         display: flex;
         gap: 15px;
-        @media(max-width: 900px) {
+        @media(max-width: 985px) {
             position: relative;
-            background-color: ghostwhite;
             width: 170px;
         }    
-        @media(max-width: 620px){
+        @media(max-width: 985px){
             display: flex;
             justify-content: center;
             gap: 50px;
             width: 100%;
 
             input{
+                z-index: 1000;
+                background-color: #fff;
                 position: absolute;
                 left: 10px;
                 top: 4px;
@@ -82,6 +82,7 @@ export const Filtros = styled.div`
 
 export const Destaque = styled.section`
     border: solid #fc4b08;
+    background-color: #fff;
     width: 80%;
     border-radius: 10px;
     display: flex;
