@@ -48,26 +48,29 @@ export const Filtros = styled.div`
     @media(max-width: 985px) {
         display: ${props => props.display ? 'flex' : 'none'};
         position: absolute;
-        width: 65%;
+        width: 78%;
+        padding: 0;
+        margin: 0;
+        border: 0;
 
+    }
+    @media(max-width: 900px){
+        width: 65%;
     }
 
     div {
         display: flex;
         gap: 15px;
-        @media(max-width: 985px) {
-            position: relative;
-            width: 170px;
-        }    
         @media(max-width: 985px){
+            background-color: #fff;
+
+            position: relative;
             display: flex;
             justify-content: center;
             gap: 50px;
             width: 100%;
 
             input{
-                z-index: 1000;
-                background-color: #fff;
                 position: absolute;
                 left: 10px;
                 top: 4px;
