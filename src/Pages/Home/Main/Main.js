@@ -47,21 +47,25 @@ export default function Main() {
             <S.Main>
                 <S.Content>
 
-                    <S.SelectMarca onClick={()=> setMarcas(!marcas)}>aaaaaaaaa</S.SelectMarca>
+                    <S.SelectMarca>
+                        <button onClick={()=> setMarcas(!marcas)}>Filtrar</button>
+                    </S.SelectMarca>
                     <S.Filtros display={marcas}>
                         
-                        {uniqueBrands.map((brand) => (
-                            <div key={brand}>
-                                <input
-                                    onClick={()=> setMarcas(false)}
-                                    type="checkbox"
-                                    id={brand}
-                                    value={brand}
-                                    onChange={handleBrandChange}
-                                />
-                                <label  for={brand}>{brand}</label>
-                            </div>
-                        ))}
+                        <section>
+                            {uniqueBrands.map((brand) => (
+                                <div key={brand}>
+                                    <input
+                                        onClick={()=> setMarcas(false)}
+                                        type="checkbox"
+                                        id={brand}
+                                        value={brand}
+                                        onChange={handleBrandChange}
+                                    />
+                                    <label  for={brand}>{brand}</label>
+                                </div>
+                            ))}
+                        </section>
                     </S.Filtros>
                     <S.Destaque>
                         {isLoading ? (

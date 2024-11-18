@@ -2,37 +2,40 @@ import React from "react";
 import styled from "styled-components";
 
 const CardDiv = styled.div`
+    border-radius: 10px;
+    background-color: ghostwhite;
     padding: 15px;
     overflow: hidden;
-    width: 33.333%;
+    width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
     transition: .4s;
-    @media(max-width: 768px){
-      width: 300px;
+    @media(max-width: 1450px){
+      width: 240px;
     }
-
     img{
         border-radius: 5px;
         height: 255px;
-        width: 240px;
+        @media(max-width: 1450px){
+            height: 220px;
+        }
+        @media(max-width: 580px){
+            height: 170px;
+        }
+        @media(max-width: 431px){
+            height: 250px;
+        }
     }
     h3{
-        font-size: 1.7rem;
-        color: #020c32;
-        @media(max-width: 500px){
-            font-size: 1.5rem;
-        }
-    }
-    h4{
         font-size: 1.5rem;
         color: #020c32;
-        @media(max-width: 500px){
-            font-size: 1.3rem;
-        }
+    }
+    h4{
+        font-size: 1.3rem;
+        color: #020c32;
     }
    button{
         color: #f24200;
@@ -48,12 +51,21 @@ const CardDiv = styled.div`
             cursor: pointer;
             background-color: #000c3a;
         }
+        @media(max-width: 1450px){
+            width: 200px;
+        }
+        @media(max-width: 580px){
+            width: 170px;
+        }
+        @media(max-width: 431px){
+            width: 250px;
+        }
     }
-    @media(max-width: 900px){
-      width: 400px;
+    @media(max-width: 580px){
+      width: 190px;
     }
-    @media(max-width: 500px){
-      width: 290px;
+    @media(max-width: 431px){
+      width: 280px;
     }
 `
 
