@@ -2,26 +2,22 @@ import React, { useState } from "react";
 import * as S from "./Styles";
 import NavBar from "../../Components/Header/NavBar/NavBar";
 import { useParams } from "react-router-dom";
-import produtos from "../../catalog.json";
-import { FaArrowRight } from "react-icons/fa";
-import { FaArrowLeft } from "react-icons/fa";
+import produtosJson from "../../catalog.json";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 export default function Product() {
   const { id } = useParams();
 
-  // Definindo o estado do carrinho fora de qualquer condição
+  const produtos = produtosJson.camisa; // Acessando o array "camisa" do JSON
+
   const [cart, setCart] = useState([]);
 
-  // Garantir que o id seja um número para comparação
   const produto = produtos.find((p) => p.id === parseInt(id));
 
-  // Definir o estado para o índice da imagem do carousel
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // As imagens do produto podem estar no objeto `produto` (ajustar conforme necessário)
-  const images = produto ? produto.imagens || [produto.img] : []; // Exemplo de como usar imagens dinâmicas
+  const images = produto ? produto.linkUrl : []; // Ajuste para array de URLs de imagens
 
-  // Lógica condicional para quando o produto não for encontrado
   if (!produto) {
     return (
       <div>
@@ -67,7 +63,7 @@ export default function Product() {
           <S.RightSection>
             <h1>Camiseta {produto.marca}</h1>
             <h3>
-              Preço: <span>{produto.preco}</span>
+              Preço: <span>{produto.valor}</span>
             </h3>
             <h3>
               Marca: <span>{produto.marca}</span>
