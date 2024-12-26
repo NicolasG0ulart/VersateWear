@@ -73,12 +73,14 @@ export default function Main() {
                         ) : (
                             filteredInfos.map((item) => (
                                 <Card
-                                    key={item.id}
-                                    marca={item.nomeCamisa}
-                                    valor={item.valor}
-                                    img={item.linkUrl}
+                                  key={item.id}
+                                  id={item.id}
+                                  marca={item.nomeCamisa}
+                                  valor={item.valor}
+                                  img={item.linkUrl}
                                 />
-                            ))
+                              ))
+                              
                         )}
                     </S.Destaque>
                 </S.Content>

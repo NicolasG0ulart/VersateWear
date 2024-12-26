@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {Link} from "react-router-dom"
 
 const CardDiv = styled.div`
     border-radius: 10px;
@@ -69,24 +70,16 @@ const CardDiv = styled.div`
     }
 `
 
-export default function Card(props){
-
-    function enviarWhatsApp() {
-        const numeroVendedor = '5532984770122';
-        const mensagem = `Olá, gostaria de saber mais sobre a disponibilidade da ${props.marca} por R$ ${props.valor}. Veja o produto no link: ${props.img}`;
-        const mensagemCodificada = encodeURIComponent(mensagem);
-        const url = `https://wa.me/${numeroVendedor}?text=${mensagemCodificada}`;
-        window.open(url, '_blank');
-      }
-
-    return(
-        <>
-            <CardDiv>
-                <img src={props.img} alt="Imagem de um dos produtos"/>
-                <h3>{props.marca}</h3>
-                <h4>{props.valor}</h4>
-                <button onClick={enviarWhatsApp}>Conferir</button>
-            </CardDiv>
-        </>
-    )
-}
+export default function Card({ id, img, marca, valor }) {
+    return (
+      <CardDiv>
+        <img src={img} alt="Imagem de um dos produtos" />
+        <h3>{marca}</h3>
+        <h4>{valor}</h4>
+        <button>
+          <Link to={`/product/${id}`}>Conferir</Link>
+        </button>
+      </CardDiv>
+    );
+  }
+  
