@@ -4,7 +4,6 @@ import {Link} from "react-router-dom"
 
 const CardDiv = styled.div`
     border-radius: 10px;
-    background-color: ghostwhite;
     padding: 15px;
     overflow: hidden;
     width: 280px;
@@ -69,6 +68,10 @@ const CardDiv = styled.div`
       width: 280px;
     }
 `
+const LinkStyled = styled(Link)`
+  color: #fc4b08;
+  text-decoration: none;
+`
 
 export default function Card({ id, img, marca, valor }) {
     return (
@@ -76,9 +79,11 @@ export default function Card({ id, img, marca, valor }) {
         <img src={img} alt="Imagem de um dos produtos" />
         <h3>{marca}</h3>
         <h4>{valor}</h4>
-        <button>
-          <Link to={`/product/${id}`}>Conferir</Link>
-        </button>
+        <LinkStyled to={`/product/${id}`}>
+          <button>
+            Conferir
+          </button>
+        </LinkStyled>
       </CardDiv>
     );
   }

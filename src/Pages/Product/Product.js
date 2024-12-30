@@ -4,19 +4,19 @@ import NavBar from "../../Components/Header/NavBar/NavBar";
 import { useParams } from "react-router-dom";
 import produtosJson from "../../catalog.json";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { useCart } from '../Cart/ContextCart';
 
 export default function Product() {
   const { id } = useParams();
+  const { addToCart } = useCart();
 
-  const produtos = produtosJson.camisa; // Acessando o array "camisa" do JSON
-
-  const [cart, setCart] = useState([]);
+  const produtos = produtosJson.camisa;
 
   const produto = produtos.find((p) => p.id === parseInt(id));
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = produto ? produto.linkUrl : []; // Ajuste para array de URLs de imagens
+  const images = produto ? produto.linkUrl : [];
 
   if (!produto) {
     return (
@@ -34,11 +34,6 @@ export default function Product() {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
-  };
-
-  const handleAddToCart = () => {
-    setCart([...cart, produto]);
-    alert("Produto adicionado ao carrinho!");
   };
 
   return (
@@ -63,18 +58,18 @@ export default function Product() {
           <S.RightSection>
             <h1>Camiseta {produto.marca}</h1>
             <h3>
-              Preço: <span>{produto.valor}</span>
+              Preço: {produto.valor}
             </h3>
             <h3>
-              Marca: <span>{produto.marca}</span>
+              Marca: {produto.marca}
             </h3>
             <h3>
-              Tamanho: <span>{produto.tamanho}</span>
+              Tamanho: {produto.tamanho}
             </h3>
             <h3>
-              Cor Predominante: <span>{produto.cor}</span>
+              Cor Predominante: {produto.cor}
             </h3>
-            <button onClick={handleAddToCart}>Adicionar ao Carrinho</button>
+            <button onClick={() => addToCart(produto)}>Adicionar ao Carrinho</button>
           </S.RightSection>
         </S.Content>
       </S.ProductMain>

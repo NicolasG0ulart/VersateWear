@@ -19,7 +19,6 @@ export const Content = styled.section`
 `;
 
 export const LeftSection = styled.section`
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,8 +27,7 @@ export const LeftSection = styled.section`
 
   img {
     border-radius: 5px;
-    max-width: 100%;
-    height: 600px;
+    height: 30vw;
   }
 `;
 
@@ -61,7 +59,6 @@ export const CarouselButtons = styled.div`
 `;
 
 export const RightSection = styled.section`
-  background-color: white;
   border-left: solid 2px #fc4b08;
   border-top: solid 2px #fc4b08;
   padding: 30px;

@@ -1,63 +1,54 @@
 import styled from "styled-components";
 
 export const Cart = styled.body`
-    background-color: #01114c;
 
     h1{
+        color: #01114c;
         margin-top: 50px;
         font-size: 3rem;
         text-align: center;
     }
 `
 export const Content = styled.section`
-    margin-top: 100px;
     padding-inline: 150px;
-    display: flex;
-    @media(max-width: 1440px){
+    width: 100%;
+    @media (max-width: 1440px) {
         padding-inline: 100px;
     }
-    @media(max-width: 1024px){
+    @media (max-width: 1024px) {
         padding-inline: 30px;
     }
 `
-export const Left = styled.div`
-    width: 60%;
-    height: 500px;
-
-    div{
-        border-bottom: #fc4b08 solid;
-        padding-bottom: 10px;
-        display: flex;
-        justify-content: space-between;
-        ul{
-            padding-right: 150px;
-            display: flex;
-            gap: 100px;
-        }
-    }
-    .image{
-        border: solid red;
-        display: flex;
-        align-items: center;
-        gap: 30px;
-
-        img{
-            height: 150px;
-        }
-        h4{
-            font-size: 1.7rem;
-        }
-    }
-    .infos{
-        width: 57%;
-        display: flex;
-        justify-content: space-between;
-        border: solid blue;
-    }
-`
 export const Item = styled.div`
-    
+    padding-bottom: 15px;
+    margin-top: 50px;
+    border-bottom: solid #fc4b08;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    img{
+        height: 100px;
+    }
+    h4{
+        margin-top: 5px;
+    }
+    h4, h3{
+        font-size: 1.4rem;
+        color: #01114c;
+    }
 `
-export const Right = styled.div`
-    width: 40%;
+export const Product = styled.div`
+    border: solid green;
+    display: flex;
+    gap: 35px;
+`
+export const Prices = styled.div`
+    border: solid red;
+`
+export const Total = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    h2{
+        color: #01114c;
+    }
 `
